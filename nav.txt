@@ -637,7 +637,7 @@
         function PickColor()
         {
             document.getElementById("WallLeft1").style.opacity = 100;
-                document.getElementById("WallLeft2").style.opacity = 100;
+            document.getElementById("WallLeft2").style.opacity = 100;
             var color1 = document.getElementById("ColorPicker1").value;
             var color2 = document.getElementById("ColorPicker2").value;
             document.getElementById("WallLeft1").style.fill = color1;
@@ -695,13 +695,23 @@
             {
                 /// Collapse every *navbar-collapse*
                 $('.navbar-collapse').collapse('hide');
-                document.querySelector(".menu").classList.toggle('open');
+
+
+                if (document.querySelector(".menu").classList.contains("open"))
+                {
+                    document.querySelector(".menu").classList.toggle('open');
+                }
             }
         });
     </script>
 
 </body>
 </html>
+
+
+
+
+
 
 
 
